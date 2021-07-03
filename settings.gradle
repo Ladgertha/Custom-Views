@@ -1,2 +1,3 @@
 rootProject.name = "Custom Views"
 include ':app'
+include ':clockview'

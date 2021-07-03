@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Custom Clock Controller</string>
+    <string name="clock_control">Clock Control</string>
+</resources>

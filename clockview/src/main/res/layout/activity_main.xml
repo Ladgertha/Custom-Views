@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/customViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:padding="@dimen/text_view_padding"
+        android:text="@string/clock_control"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display3"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ru.ladgertha.clockview.DialView
+        android:id="@+id/dialView"
+        android:layout_width="@dimen/clock_dimen"
+        android:layout_height="@dimen/clock_dimen"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        app:clockColor1="@color/color1"
+        app:clockColor10="@color/color10"
+        app:clockColor11="@color/color11"
+        app:clockColor12="@color/color12"
+        app:clockColor2="@color/color2"
+        app:clockColor3="@color/color3"
+        app:clockColor4="@color/color4"
+        app:clockColor5="@color/color5"
+        app:clockColor6="@color/color6"
+        app:clockColor7="@color/color7"
+        app:clockColor8="@color/color8"
+        app:clockColor9="@color/color9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customViewLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
